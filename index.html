@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>个人信息介绍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #2f3640;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid white;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      color: #3498db;
+    }
+
+    .info-list p {
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+
+    .skills-list li {
+      margin: 10px 0;
+    }
+
+    .bar {
+      background-color: #dcdde1;
+      height: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background-color: #44bd32;
+      border-radius: 6px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      background: #fafafa;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="yuan.jpg" alt="头像">
+    <h1>袁世强</h1>
+    <p>前端开发者 | 爱代码、爱设计、爱分享</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>个人信息</h2>
+      <div class="info-list">
+        <p><strong>姓名：</strong> 袁世强</p>
+        <p><strong>年龄：</strong> 20岁</p>
+        <p><strong>职业：</strong> Web 前端工程师</p>
+        <p><strong>位置：</strong> 武汉，中国</p>
+        <p><strong>学历：</strong> 本科 - 计算机科学</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>技能展示</h2>
+      <ul class="skills-list">
+        <li>HTML5
+          <div class="bar"><div class="bar-fill" style="width: 95%;"></div></div>
+        </li>
+        <li>CSS3
+          <div class="bar"><div class="bar-fill" style="width: 90%;"></div></div>
+        </li>
+        <li>JavaScript
+          <div class="bar"><div class="bar-fill" style="width: 85%;"></div></div>
+        </li>
+        <li>Vue / React
+          <div class="bar"><div class="bar-fill" style="width: 70%;"></div></div>
+        </li>
+        <li>Git & GitHub
+          <div class="bar"><div class="bar-fill" style="width: 80%;"></div></div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>项目展示</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>个人博客</h3>
+          <p>使用 VuePress 构建的博客系统，记录技术笔记和生活点滴。</p>
+        </div>
+        <div class="project-card">
+          <h3>任务管理工具</h3>
+          <p>一个简洁的 ToDo 应用，支持本地存储，使用原生 JavaScript 编写。</p>
+        </div>
+        <div class="project-card">
+          <h3>响应式作品集</h3>
+          <p>展示设计项目的响应式网页，适配各种设备，使用 Flexbox 和媒体查询。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>联系方式</h2>
+      <div class="contact">
+        <p>邮箱：<a href="mailto:2978274703@qq.com">2978274703@qq.com</a></p>
+        <p>GitHub：<a href="https://github.com/mingbit" target="_blank">github.com/mingbit</a></p>
+        <p>博客：<a href="#">mingbit.blog.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 张三的个人网站 | 由 HTML + CSS 构建
+  </footer>
+
+</body>
+</html>
